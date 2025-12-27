@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clinic-Friendly Packaging Demo | TechZnanie Innovations</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">
+          <span class="brand__mark">TechZnanie</span>
+          <span class="brand__sub">Clinic Digital Systems</span>
+        </div>
+        <div class="nav__actions">
+          <button class="ghost" id="demoToggle">View Live Demo</button>
+          <button class="primary" id="ctaTop">Start Phase 1</button>
+        </div>
+      </nav>
+      <div class="hero__content">
+        <div>
+          <p class="tag">Clinic-Friendly Packaging • High Conversion</p>
+          <h1>Phase-wise digital setup that doctors actually say yes to.</h1>
+          <p class="hero__lead">
+            A fully functional demo that shows how clinics can start with a clean website, add online
+            appointments, and upgrade to a complete patient CRM — without intimidation.
+          </p>
+          <div class="hero__cta">
+            <button class="primary" id="ctaPrimary">Show Me Package 2</button>
+            <button class="ghost" id="ctaSecondary">Compare Packages</button>
+          </div>
+          <div class="trust">
+            <span>✅ Phase-wise delivery</span>
+            <span>✅ ROI-focused language</span>
+            <span>✅ Upsell-ready path</span>
+          </div>
+        </div>
+        <div class="hero__card">
+          <h3>Demo Clinic</h3>
+          <p class="muted">Sunrise Multispeciality Center</p>
+          <div class="stats">
+            <div>
+              <h4>42%</h4>
+              <p>Increase in online bookings</p>
+            </div>
+            <div>
+              <h4>3x</h4>
+              <p>Faster follow-up tracking</p>
+            </div>
+          </div>
+          <div class="pill">Phase 1 → Phase 3 journey</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="packages">
+        <div class="section__header">
+          <div>
+            <h2>Choose the phase that fits the clinic today</h2>
+            <p class="muted">
+              Start with Package 2 for best conversion. Upgrade to CRM when the clinic is ready.
+            </p>
+          </div>
+          <div class="toggle">
+            <span>Phase view</span>
+            <button class="toggle__btn active" data-view="all">All Packages</button>
+            <button class="toggle__btn" data-view="recommended">Recommend Package 2</button>
+          </div>
+        </div>
+
+        <div class="card-grid" id="packageGrid">
+          <article class="card" data-package="basic">
+            <div class="card__badge">Package 1</div>
+            <h3>Basic Clinic Website</h3>
+            <p class="muted">Perfect for first-time digital clinics</p>
+            <ul>
+              <li>Professional clinic website (5–6 sections)</li>
+              <li>Home, About, Services, Doctors, Contact</li>
+              <li>Mobile-responsive design</li>
+              <li>WhatsApp & Call Now buttons</li>
+              <li>Google Maps integration</li>
+              <li>Basic SEO setup & branding</li>
+            </ul>
+            <div class="card__footer">
+              <span class="timeline">⏱️ 5–7 working days</span>
+              <button class="ghost select-package" data-package="basic">Start with Website</button>
+            </div>
+          </article>
+
+          <article class="card highlight" data-package="smart">
+            <div class="card__badge star">Most Popular</div>
+            <h3>Smart Clinic Website + Appointments</h3>
+            <p class="muted">Highest conversion package</p>
+            <ul>
+              <li>Everything in Basic</li>
+              <li>Online appointment booking system</li>
+              <li>Doctor-wise & time-slot booking</li>
+              <li>Appointment notifications (Admin)</li>
+              <li>Lead capture & enquiry system</li>
+              <li>Admin panel access</li>
+            </ul>
+            <div class="card__footer">
+              <span class="timeline">⏱️ 7–10 working days</span>
+              <button class="primary select-package" data-package="smart">Recommend This</button>
+            </div>
+          </article>
+
+          <article class="card" data-package="pro">
+            <div class="card__badge">Package 3</div>
+            <h3>Digital Clinic Pro (Website + CRM)</h3>
+            <p class="muted">For growth-focused clinics</p>
+            <ul>
+              <li>Everything in Smart Clinic</li>
+              <li>Patient CRM with visit history</li>
+              <li>Follow-up reminders</li>
+              <li>Enquiry tracking</li>
+              <li>Basic reports & dashboards</li>
+              <li>Secure login access</li>
+            </ul>
+            <div class="card__footer">
+              <span class="timeline">⏱️ 10–14 working days</span>
+              <button class="ghost select-package" data-package="pro">Upgrade to CRM</button>
+            </div>
+          </article>
+
+          <article class="card subtle" data-package="advanced">
+            <div class="card__badge">Phase 2/3</div>
+            <h3>Advanced Clinic Setup (Optional)</h3>
+            <p class="muted">Position as a future upgrade</p>
+            <ul>
+              <li>EHR (prescriptions & reports)</li>
+              <li>Lab report uploads</li>
+              <li>Doctor-wise dashboards</li>
+              <li>HRMS / Staff attendance</li>
+              <li>Analytics & performance tracking</li>
+            </ul>
+            <div class="card__footer">
+              <span class="timeline">Phase 2+ roadmap</span>
+              <button class="ghost select-package" data-package="advanced">Add Later</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="demo">
+        <div class="section__header">
+          <div>
+            <h2>Live demo: booking & CRM in action</h2>
+            <p class="muted">
+              This prototype simulates appointment booking and patient follow-ups — just like the real
+              system.
+            </p>
+          </div>
+          <button class="ghost" id="resetDemo">Reset Demo Data</button>
+        </div>
+
+        <div class="demo-grid">
+          <div class="panel">
+            <h3>Patient Appointment Booking</h3>
+            <form id="bookingForm">
+              <label>
+                Patient Name
+                <input type="text" name="patientName" placeholder="e.g. Neha Sharma" required />
+              </label>
+              <label>
+                Mobile Number
+                <input type="tel" name="patientPhone" placeholder="e.g. 98765 43210" required />
+              </label>
+              <label>
+                Select Doctor
+                <select name="doctor" required>
+                  <option value="">Choose a doctor</option>
+                  <option value="Dr. Mehta (Cardiology)">Dr. Mehta (Cardiology)</option>
+                  <option value="Dr. Rao (Dermatology)">Dr. Rao (Dermatology)</option>
+                  <option value="Dr. Kapoor (General)">Dr. Kapoor (General)</option>
+                </select>
+              </label>
+              <label>
+                Preferred Slot
+                <select name="slot" required>
+                  <option value="">Pick a time</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="12:30 PM">12:30 PM</option>
+                  <option value="05:30 PM">05:30 PM</option>
+                </select>
+              </label>
+              <label>
+                Reason for Visit
+                <input type="text" name="reason" placeholder="e.g. Follow-up check" />
+              </label>
+              <button class="primary" type="submit">Book Appointment</button>
+            </form>
+          </div>
+
+          <div class="panel">
+            <h3>Admin Dashboard Preview</h3>
+            <div class="panel__stats">
+              <div>
+                <p class="muted">Today's Bookings</p>
+                <h4 id="statBookings">0</h4>
+              </div>
+              <div>
+                <p class="muted">Pending Follow-ups</p>
+                <h4 id="statFollowups">0</h4>
+              </div>
+            </div>
+            <div class="table" id="bookingTable">
+              <div class="table__row table__head">
+                <span>Patient</span>
+                <span>Doctor</span>
+                <span>Slot</span>
+                <span>Status</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="crm">
+        <div class="section__header">
+          <div>
+            <h2>CRM follow-up tracker</h2>
+            <p class="muted">
+              Demonstrate Package 3 value with live reminders and patient history.
+            </p>
+          </div>
+        </div>
+        <div class="demo-grid">
+          <div class="panel">
+            <h3>Add Follow-up Reminder</h3>
+            <form id="followupForm">
+              <label>
+                Patient Name
+                <input type="text" name="followupName" placeholder="e.g. Arjun Pillai" required />
+              </label>
+              <label>
+                Condition
+                <input type="text" name="condition" placeholder="e.g. Diabetes review" required />
+              </label>
+              <label>
+                Reminder Date
+                <input type="date" name="reminderDate" required />
+              </label>
+              <button class="primary" type="submit">Save Reminder</button>
+            </form>
+          </div>
+          <div class="panel">
+            <h3>Upcoming Follow-ups</h3>
+            <div class="table" id="followupTable">
+              <div class="table__row table__head">
+                <span>Patient</span>
+                <span>Condition</span>
+                <span>Date</span>
+                <span>Status</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section__header">
+          <div>
+            <h2>Add-on modules (only when asked)</h2>
+            <p class="muted">Position these as optional upgrades for later.</p>
+          </div>
+        </div>
+        <div class="addon-grid">
+          <div class="addon">Google Reviews Integration</div>
+          <div class="addon">WhatsApp Appointment Alerts</div>
+          <div class="addon">Multi-language Website</div>
+          <div class="addon">Digital Marketing Setup</div>
+          <div class="addon">Hosting + Maintenance</div>
+        </div>
+      </section>
+
+      <section class="section closing" id="closing">
+        <div>
+          <h2>Closing question that converts</h2>
+          <p class="lead">
+            “Doctor, would you like to start with just the website, or should we include online
+            appointment booking so patients can book directly?”
+          </p>
+        </div>
+        <div class="closing__cta">
+          <button class="primary" id="ctaBooking">Include Appointment Booking</button>
+          <button class="ghost" id="ctaWebsite">Just the Website</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>TechZnanie Innovations</strong>
+        <p class="muted">Clinic-friendly packaging & digital systems</p>
+      </div>
+      <div>
+        <p class="muted">Use after demo • Phase-wise • ROI focused</p>
+      </div>
+    </footer>
+
+    <div class="modal" id="demoModal" aria-hidden="true">
+      <div class="modal__content">
+        <button class="modal__close" id="closeModal">×</button>
+        <h3>Live Demo Guidance</h3>
+        <ol>
+          <li>Start with Package 2 in the package list.</li>
+          <li>Book an appointment to show admin notifications.</li>
+          <li>Add a follow-up reminder to show CRM value.</li>
+          <li>Show the Phase 2 add-ons only if asked.</li>
+        </ol>
+        <button class="primary" id="modalCta">Got it, start demo</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
